@@ -52,6 +52,9 @@ class FuzzyFinderSelect(bpy.types.Operator):
     names = []
     user_input = ""
 
+    def execute(self, context):
+        return self.invoke(context, None)
+
     def invoke(self, context, event):
         if context.area.type == 'IMAGE_EDITOR':
             self.names = [i.name for i in bpy.data.images]
