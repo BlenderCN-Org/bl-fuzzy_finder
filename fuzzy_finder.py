@@ -111,7 +111,8 @@ class FuzzyFinderSelect(bpy.types.Operator):
         # End typing on enter
         if event.type == 'RET' and event.value == 'PRESS':
             context.area.header_text_set()
-            self.select(context, event, fuzznames[0])
+            if len(fuzznames) > 0:
+                self.select(context, event, fuzznames[0])
             return {'FINISHED'}
         return {'RUNNING_MODAL'}
 
