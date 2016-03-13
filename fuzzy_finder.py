@@ -106,7 +106,7 @@ class FuzzyFinderSelect(bpy.types.Operator):
         # Exit on esc
         if event.type == 'ESC':
             context.area.header_text_set()
-            return {'FINISHED'}
+            return {'CANCELED'}
 
         # End typing on enter
         if event.type == 'RET' and event.value == 'PRESS':
