@@ -4,7 +4,7 @@ Select items by their name without going through separate windows or menus, whil
 # Supported context
 
 ## 3D_VIEW, OUTLINER
-Selects object and make it active.
+Selects object and makes it active.
 
 ## IMAGE_EDITOR
 Finds image and makes it active.
