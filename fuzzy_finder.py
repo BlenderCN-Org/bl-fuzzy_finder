@@ -36,6 +36,7 @@ TRANSLATE = {
     'EQUAL': '=',
     'LEFT_BRACKET': '[',
     'RIGHT_BRACKET': ']',
+    'SPACE': ' ',
 }
 
 ALLOWED_INPUT = [letter for letter in string.ascii_uppercase] + \
