@@ -3,17 +3,6 @@ import difflib
 import bpy
 
 
-bl_info = {
-    'name': "Fuzzy Finder",
-    'description': "Context sensitive search and select.",
-    'location': "Add shortcut to `fuzzy_finder.select`",
-    'author': "miniukof",
-    'version': (0, 0, 1),
-    'blender': (2, 77, 0),
-    'category': "User Interface",
-}
-
-
 # Translate blender event.types to symbols they represent.
 TRANSLATE = {
     'ZERO': '0',
@@ -39,6 +28,7 @@ TRANSLATE = {
     'RIGHT_BRACKET': ']',
     'SPACE': ' ',
 }
+
 
 ALLOWED_INPUT = [letter for letter in string.ascii_uppercase] + \
                 list(TRANSLATE.keys())
