@@ -6,6 +6,7 @@ import bpy
 bl_info = {
     'name': "Fuzzy Finder",
     'description': "Context sensitive search and select.",
+    'location': "Add shortcut to `fuzzy_finder.select`",
     'author': "miniukof",
     'version': (0, 0, 1),
     'blender': (2, 77, 0),
